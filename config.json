@@ -3,9 +3,9 @@
   "username": "ItzArman09",
   "name": null,
   "userimg": "https://avatars.githubusercontent.com/u/100463136?v=4",
-  "sort": "created",
+  "sort": "star",
   "order": "asc",
-  "includeFork": false,
+  "includeFork": true,
   "theme": "dark.css",
   "types": [
    "all"
