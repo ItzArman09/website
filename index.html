@@ -1,239 +1,205 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ItzArman09</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/7927d75ca4.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-  <link rel="stylesheet" href="index.css">
-<link rel="icon" href="https://avatars.githubusercontent.com/u/100463136?v=4" type="image/png"></head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="https://cdn.arman.is-a.dev/me/avatar.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Itz_Arman
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
 
 <body>
-  <div id="loading">
-    <div id="spinner"></div>
-  </div>
-  <div id="profile">
-    <div id="profile_img" style="background: url(https://avatars.githubusercontent.com/u/100463136?v=4) center;"></div>
-    <div id="username"><span style="display:block;"><i class="fa-solid fa-hat-cowboy"></i> &nbsp; Arman</span><a href="https://github.com/ItzArman09">@ItzArman09</a></div>
-    <div id="userbio" style="display:block;">Just Another Guy...</div>
-    <div id="about">
-              <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
-              <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
-              <span style="display:none;"><i class="fas fa-link"></i> &nbsp; <a href=""></a></span>
-              <span style="display:none;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; null</span>
-              <span style="display:block;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available To Be hired On Fiverr</span>
-              <div class="socials">
-              <span style="display:none !important;"><a href="https://www.twitter.com/undefined" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
-              <span style="display:none !important;"><a href="https://www.dribbble.com/undefined" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
-              <span style="display:none !important;"><a href="https://www.linkedin.com/in/undefined/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
-              <span style="display:none !important;"><a href="https://www.medium.com/@undefined/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Arman</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>A web Developer.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+              <div class="work__links">
+                <a href="https://arman.is-a.dev" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/ItzArman09/website" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
               </div>
-              <div class="pages">
-                <span style="display: block;"><a href="https://github.com/ItzArman09/" target="_blank" class="pages"><i class="fa-brands fa-github"></i> &nbsp;&nbsp; Github</a></span>
-                <span style="display: block;"><a href="https://mail.arman.is-a.dev/" target="_blank" class="pages"><i class="fas fa-envelope"></i> &nbsp;&nbsp; Mail</a></span>
-                <span style="display: block;"><a href="https://cdn.arman.is-a.dev/" target="_blank" class="pages"><i class="fas fa-paper-plane"></i> &nbsp;&nbsp; Content Delivery Network</a></span>
+            </div>
+            <div class="work__image-box">
+              <img src="https://cdn.arman.is-a.dev/me/mywebsite.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <!-- <div class="work__box">
+            <div class="work__text">
+              <h3>Foxie</h3>
+              <p>
+                A multifunctional client made for your servers.
+              </p>
+              <ul class="work__list">
+                <li>Node.js</li>
+                <li>MongoDB</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
               </div>
-              </div>
-  </div>
-  <div id="display">
-    <div id="work">
-      <h1>Github Repositories.</h1>
-      <div class="projects" id="work_section">
-                      <a href="https://github.com/ItzArman09/foxie.js" target="_blank">
-                      <section>
-                          <div class="section_title">foxie.js</div>
-                          <div class="about_section">
-                          <span style="display:block;">A purely javascript based app</span>
-                          </div>
-                          <div class="bottom_section">
-                              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
-                              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                          </div>
-                      </section>
-                      </a>
-                      <a href="https://github.com/ItzArman09/ItzArman09" target="_blank">
-                      <section>
-                          <div class="section_title">ItzArman09</div>
-                          <div class="about_section">
-                          <span style="display:none;">undefined</span>
-                          </div>
-                          <div class="bottom_section">
-                              <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
-                              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                          </div>
-                      </section>
-                      </a>
-                      <a href="https://github.com/ItzArman09/website" target="_blank">
-                      <section>
-                          <div class="section_title">website</div>
-                          <div class="about_section">
-                          <span style="display:none;">undefined</span>
-                          </div>
-                          <div class="bottom_section">
-                              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
-                              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                          </div>
-                      </section>
-                      </a>
-                      <a href="https://github.com/ItzArman09/discord-eazy" target="_blank">
-                      <section>
-                          <div class="section_title">discord-eazy</div>
-                          <div class="about_section">
-                          <span style="display:block;">..</span>
-                          </div>
-                          <div class="bottom_section">
-                              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TypeScript</span>
-                              <span><i class="fas fa-star"></i>&nbsp; 2</span>
-                              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                          </div>
-                      </section>
-                      </a></div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Clients ***** -->
+
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Clients</h2>
+        <div class="client__logos">
+          <!-- Add logos of the clients or companies you'have worked with. -->
+          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              Hey, I'm Arman. A web developer.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="#" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="https://cdn.arman.is-a.dev/me/banner.gif" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Are you looking for any kind of consultation? or want to ask questions? or have some advice for me
+          or just want to say "Hi 👋" in any case feel free to Let me know. I
+          will do my best to respond back. 😊 The quickest way to reach out to
+          me is via an email.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:contact@mail.arman.is-a.dev" class="btn">contact@mail.arman.is-a.dev</a>
+      </div>
     </div>
-    <div id="forks" style="display: block;">
-      <h1>Forks.</h1>
-      <div class="projects" id="forks_section">
-                      <a href="https://github.com/ItzArman09/Discord-Account-Creator-2022" target="_blank">
-                      <section>
-                          <div class="section_title">Discord-Account-Creator-2022</div>
-                          <div class="about_section">
-                          <span style="display:none;">undefined</span>
-                          </div>
-                          <div class="bottom_section">
-                              <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
-                              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                          </div>
-                      </section>
-                      </a>
-                      <a href="https://github.com/ItzArman09/js.org" target="_blank">
-                      <section>
-                          <div class="section_title">js.org</div>
-                          <div class="about_section">
-                          <span style="display:block;">Dedicated to JavaScript and its awesome community since 2015 </span>
-                          </div>
-                          <div class="bottom_section">
-                              <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
-                              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                          </div>
-                      </section>
-                      </a>
-                      <a href="https://github.com/ItzArman09/Multipurpose-discord-bot" target="_blank">
-                      <section>
-                          <div class="section_title">Multipurpose-discord-bot</div>
-                          <div class="about_section">
-                          <span style="display:block;">A multipurpose bot, a clan bot, a all in one bot. The one bot u need for ur server originally made as Milrato discord Bot and by Tomato6966. </span>
-                          </div>
-                          <div class="bottom_section">
-                              <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
-                              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                          </div>
-                      </section>
-                      </a>
-                      <a href="https://github.com/ItzArman09/register" target="_blank">
-                      <section>
-                          <div class="section_title">register</div>
-                          <div class="about_section">
-                          <span style="display:block;">Grab your own sweet-looking '.is-a.dev' subdomain</span>
-                          </div>
-                          <div class="bottom_section">
-                              <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
-                              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                          </div>
-                      </section>
-                      </a>
-                      <a href="https://github.com/ItzArman09/runs-on.tech" target="_blank">
-                      <section>
-                          <div class="section_title">runs-on.tech</div>
-                          <div class="about_section">
-                          <span style="display:block;">Free 'runs-on.tech' subdomains for personal sites, open-source projects, and more.</span>
-                          </div>
-                          <div class="bottom_section">
-                              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
-                              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                          </div>
-                      </section>
-                      </a></div>
-    </div>
-    <div id="blog_section">
-      <h1>Blog.</h1>
-      <div id="blogs"></div>
-    </div>
-    <div id="footer">
-      <a href="https://github.com/ItzArman09/" target="_blank">made on earth by a human called Arman</a>
-    </div>
-  </div>
-  <script type="text/javascript">
-    setTimeout(function() {
-      document.getElementById("loading").classList.add("animated");
-      document.getElementById("loading").classList.add("fadeOut");
-      setTimeout(function() {
-        document.getElementById("loading").classList.remove("animated");
-        document.getElementById("loading").classList.remove("fadeOut");
-        document.getElementById("loading").style.display = "none";
-      }, 800);
-    }, 1500);
-    $.getJSON("blog.json", function(blog) {
-      blog = blog || [];
-      if (blog.length == 0) {
-        return (document.getElementById("blog_section").style.display =
-          "none");
-      }
-      for (var i = 0; i < blog.length; i++) {
-        $("#blogs").append(`
-          <a href="./blog/${blog[i].url_title}/" target="_blank">
-              <section>
-                  <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
-                  <div class="blog_container">
-                      <div class="section_title">${blog[i].title}</div>
-                      <div class="about_section">
-                          ${blog[i].sub_title}
-                      </div>
-                  </div>
-              </section>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <!-- <li class="footer__social-link-item">
+          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
+            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
           </a>
-          `);
-      }
-    }).fail(function() {
-      return (document.getElementById("blog_section").style.display = "none");
-    });
-  </script>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
+            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li> -->
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+      </ul>
 
-  <script>
-    const magicProjectsGrid = new MagicGrid({
-      container: "#work_section",
-      animate: false,
-      gutter: 30, // default gutter size
-      static: true,
-      useMin: false,
-      maxColumns: 2,
-      useTransform: true
-    });
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; Copyright 2022 <a href="https://arman.is-a.dev" class="link">ItzArman09</a>.
+      </p>
+    </div>
+  </footer>
 
-    const magicForksGrid = new MagicGrid({
-      container: "#forks_section",
-      animate: false,
-      gutter: 30, // default gutter size
-      static: true,
-      useMin: false,
-      maxColumns: 2,
-      useTransform: true
-    });
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
 
-    $("document").ready(() => {
-      magicProjectsGrid.listen();
-      magicForksGrid.listen();
-    });
-  </script>
-
-
-</body></html>
+</html>
